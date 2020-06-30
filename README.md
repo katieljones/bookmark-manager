@@ -1,3 +1,10 @@
+1. Connect to psql
+2. Create the database using the psql command CREATE DATABASE bookmark_manager;
+3. Connect to the database using the pqsl command \c bookmark_manager;
+4. Run the query we have saved in the file 01_create_bookmarks_table.sql
+
+
+
 # Bookmark Manager
 
 Bookmark manager is a program that stores weblinks so that the user can read them later.
@@ -16,9 +23,9 @@ To see the code in action Clone the directory, and perform the following in the 
 Rackup
 ```
 
-Then open your web browser into the resulting terminal. 
+Then open your web browser into the resulting terminal.
 
-The code for Bookmark Manager can also be run by going to 
+The code for Bookmark Manager can also be run by going to
 
 ```bash
 irb './lib/bookmark.rb'
@@ -66,7 +73,7 @@ bookmark.new("name") # creates a new bookmark with string
 Tests are located within /spec folder. As the website is built out we would expect to have more specific testing on the website.
 
 ## Contributing
-As this is an afternoon week challenge, I have collaborated with @JoshuaNg2332. 
+As this is an afternoon week challenge, I have collaborated with @JoshuaNg2332.
 
 ## Follow Up
 
