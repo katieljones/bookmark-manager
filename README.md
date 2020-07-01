@@ -1,10 +1,3 @@
-1. Connect to psql
-2. Create the database using the psql command CREATE DATABASE bookmark_manager;
-3. Connect to the database using the psql command \c bookmark_manager;
-4. Run the query we have saved in the file 01_create_bookmarks_table.sql
-
-
-
 # Bookmark Manager
 
 Bookmark manager is a program that stores weblinks so that the user can read them later.
@@ -51,6 +44,13 @@ So that I can interact with other people,
 I want to be able to comment on all bookmarks.
 ```
 
+## Installation
+
+1. Connect to psql
+2. Create the database using the psql command CREATE DATABASE bookmark_manager;
+3. Connect to the database using the psql command \c bookmark_manager;
+4. Run the query we have saved in the file 01_create_bookmarks_table.sql
+
 ## Assumptions
 * All bookmarks are public
 * All bookmarks are timestamped
@@ -73,7 +73,7 @@ bookmark.new("name") # creates a new bookmark with string
 Tests are located within /spec folder. As the website is built out we would expect to have more specific testing on the website.
 
 ## Contributing
-As this is an afternoon week challenge, I have collaborated with @JoshuaNg2332.
+As this is an afternoon week challenge, this project is in collaboration with @JoshuaNg2332, @samlandman, @alessa-lou, @mirimichaelson
 
 ## Follow Up
 

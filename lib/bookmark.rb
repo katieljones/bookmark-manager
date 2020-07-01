@@ -21,7 +21,6 @@ class Bookmark
   #   @name = name
   #   @tag_collection = tag_collection
   #   @comment_collection = comment_collection
-
   # end 
 
 end
