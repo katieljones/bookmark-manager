@@ -1,6 +1,5 @@
 require 'pg'
 
-
 feature 'Testing the infrastructure of our app' do
   scenario 'Testing the user can see Hello World on the page' do
     visit('/')
@@ -8,13 +7,6 @@ feature 'Testing the infrastructure of our app' do
   end
 end
 
-# feature 'Testing the bookmarks page' do
-#   scenario 'User is forwarded to /bookmarks and can see a list of bookmarks' do
-#     visit('/')
-#     click_button('my_bookmarks')
-#     expect(page).to have_content("My bookmarks")
-#   end
-# end
 
 feature 'Viewing bookmarks' do
   scenario 'The user can see the bookmarks' do

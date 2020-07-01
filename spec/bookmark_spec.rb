@@ -19,6 +19,13 @@ describe Bookmark do
 
   end
 
+  describe '.create' do
+    it 'creates new bookmarks'do
+    Bookmark.create(link: 'https://www.youtube.com')
+    expect(Bookmark.all).to include 'https://www.youtube.com'
+    end
+  end
+end
 
   # let (:bookmark) {Bookmark.new("Josh", "www.makers.tech", "Makers", "Bootcamp, Tech, Coding", "This is a comment.")}
 
@@ -46,4 +53,3 @@ describe Bookmark do
   #   expect(bookmark.comment_collection).to eq("This is a comment.")
   # end
 
-end
