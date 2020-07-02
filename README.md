@@ -74,7 +74,8 @@ bookmark.new("name") # creates a new bookmark with string
 Tests are located within /spec folder. As the website is built out we would expect to have more specific testing on the website.
 
 ## Contributing
-As this is an afternoon week challenge, this project is in collaboration with @JoshuaNg2332, @samlandman, @alessa-lou, @mirimichaelson
+As this is an afternoon week challenge, this project is in collaboration with @JoshuaNg2332, @samlandman, @alessa-lou, 
+@mirimichaelson, @katieljones
 
 ## Follow Up
 

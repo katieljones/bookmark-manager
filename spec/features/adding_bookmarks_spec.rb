@@ -5,8 +5,9 @@ feature 'Adding bookmarks' do
     connection = PG.connect(dbname: 'bookmark_manager_test')
 
     visit('/')
-    fill_in "new_bookmark", :with => "https://www.youtube.com"
+    fill_in "title", :with => "Youtube"
+    fill_in "url", :with => "https://www.youtube.com"
     click_button('add_bookmark')
-    expect(page).to have_content "https://www.youtube.com"
+    expect(page).to have_link('Youtube', href: 'https://www.youtube.com')
   end
 end
