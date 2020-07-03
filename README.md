@@ -46,6 +46,10 @@ I want to be able to comment on all bookmarks.
 As a user,
 So that I can remove any bookmarks I no longer need,
 I would like to be able to delete a bookmark.
+
+As a user,
+So that I can update a bookmark,
+I would like to be able to edit a bookmark.
 ```
 
 ## Installation
