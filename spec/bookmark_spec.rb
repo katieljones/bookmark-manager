@@ -6,7 +6,7 @@ describe Bookmark do
   describe '.all' do
     it 'returns all bookmarks' do
       connection = PG.connect(dbname: 'bookmark_manager_test')
-      
+
       bookmark = Bookmark.create(url: "http://www.makersacademy.com", title: "Makers Academy")
       Bookmark.create(url: "http://www.destroyallsoftware.com", title: "Destroy All Software")
       Bookmark.create(url: "http://www.google.com", title: "Google")
@@ -35,6 +35,15 @@ describe Bookmark do
   end
 end
 
+  describe '.delete' do
+    it 'deletes a bookmarks' do
+    bookmark = Bookmark.create(title: 'Makers Academy', url: 'http://www.makersacademy.com')
+
+    Bookmark.delete(id: bookmark.id)
+
+    expect(Bookmark.all.length).to eq 0
+    end 
+  end
   # let (:bookmark) {Bookmark.new("Josh", "www.makers.tech", "Makers", "Bootcamp, Tech, Coding", "This is a comment.")}
 
   # it 'should create a new bookmark' do
@@ -60,4 +69,3 @@ end
   # it 'should assign an owner on initialize' do
   #   expect(bookmark.comment_collection).to eq("This is a comment.")
   # end
-
