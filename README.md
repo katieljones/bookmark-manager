@@ -42,6 +42,10 @@ I want to be able to browse all bookmarks.
 As a user,
 So that I can interact with other people,
 I want to be able to comment on all bookmarks.
+
+As a user,
+So that I can remove any bookmarks I no longer need,
+I would like to be able to delete a bookmark.
 ```
 
 ## Installation
@@ -74,7 +78,7 @@ bookmark.new("name") # creates a new bookmark with string
 Tests are located within /spec folder. As the website is built out we would expect to have more specific testing on the website.
 
 ## Contributing
-As this is an afternoon week challenge, this project is in collaboration with @JoshuaNg2332, @samlandman, @alessa-lou, 
+As this is an afternoon week challenge, this project is in collaboration with @JoshuaNg2332, @samlandman, @alessa-lou,
 @mirimichaelson, @katieljones
 
 ## Follow Up
